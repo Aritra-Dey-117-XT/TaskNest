@@ -34,7 +34,7 @@ export async function POST(request: NextRequest) {
             return NextResponse.json({message: "OTP did not match!"}, {status: 401})
         }
 
-        if(Date.now() > user.verifyOTPExpiry) {
+        if(Date.now() > user.forgotPasswordOTPExpiry) {
             return NextResponse.json({message: "OTP Expired!"}, {status: 401})
         }
 
