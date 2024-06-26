@@ -23,7 +23,7 @@ export default function LoginPage() {
         } else {
             setButtonDisabled(true)
         }
-    })
+    }, [])
 
     const onLogin = async () => {
         try {

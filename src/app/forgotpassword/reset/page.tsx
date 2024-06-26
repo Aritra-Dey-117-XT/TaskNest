@@ -90,7 +90,7 @@ export default function UpdateForgotPasswordPage() {
         } else {
             setButtonDisabled(true)
         }
-    })
+    }, [])
 
     const onResetPassword = async () => {
         try {

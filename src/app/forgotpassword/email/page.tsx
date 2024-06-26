@@ -23,7 +23,7 @@ export default function ForgotPasswordEmailPage() {
         } else {
             setButtonDisabled(true)
         }
-    })
+    }, [])
 
     const onSendToken = async () => {
         try {

@@ -47,7 +47,7 @@ export default function Home() {
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * taskQuotes.length);
     setRandomQuote(taskQuotes[randomIndex]);
-  }, []);
+  }, [taskQuotes]);
 
   return (
     <div className={styles.container}>
@@ -83,7 +83,7 @@ export default function Home() {
           {randomQuote || "Welcome to TaskNest"}
         </h1>
         <p className={styles.description}>
-          TaskNest is a productivity app designed to help you organize your tasks efficiently. Whether you're managing personal projects or collaborating with a team, TaskNest ensures your tasks are always under control.
+          TaskNest is a productivity app designed to help you organize your tasks efficiently. Whether you are managing personal projects or collaborating with a team, TaskNest ensures your tasks are always under control.
         </p>
         <div className={styles.buttons}>
           {userAuthorized ? (

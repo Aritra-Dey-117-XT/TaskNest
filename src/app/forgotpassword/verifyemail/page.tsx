@@ -29,7 +29,7 @@ export default function VerifyEmailPage() {
         } else {
             setButtonDisabled(true)
         }
-    }, [data.otp])
+    }, [data, data.otp])
 
     const onVerify = async () => {
         try {
