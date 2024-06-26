@@ -140,10 +140,17 @@ export const sendAlertMail = async({email, task, dateTime}: any) => {
 
         const sendingDateTime = new Date(year, month - 1, date, hours, mins, 0); // Year, Month (0-based), Day, Hour, Minute, Second
 
+        // schedule.scheduleJob(sendingDateTime, async() => {
+        //     const mailResponse = await transporter.sendMail(mailOptions)
+        //     return mailResponse
+        // })
+
         schedule.scheduleJob(sendingDateTime, async() => {
-            const mailResponse = await transporter.sendMail(mailOptions)
-            return mailResponse
-        })
+            console.log("Sending email...");
+            const mailResponse = await transporter.sendMail(mailOptions);
+            console.log("Mail sent:", mailResponse);
+            return mailResponse;
+        });
 
     } catch(error: any) {
         throw new Error(error.message)
