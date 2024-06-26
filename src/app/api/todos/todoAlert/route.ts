@@ -1,6 +1,5 @@
 import { connect } from "@/dbConfig/dbConfig";
 import {NextRequest, NextResponse} from "next/server"
-import { getDataFromToken } from "@/helpers/getDataFromToken";
 import { sendAlertMail } from "@/helpers/sendAlertMail";
 
 connect()
@@ -9,15 +8,14 @@ export async function POST(request: NextRequest) {
     try {
 
         const reqBody = await request.json()
-        const {task, date, time} = reqBody
-        const data = await getDataFromToken(request)
+        const {email, task, date, time} = reqBody
 
         const dateTime = `on ${date}, at ${time}`
 
         try {
 
             await sendAlertMail({
-                email: data.email,
+                email: email,
                 task: task,
                 dateTime: dateTime
             })

@@ -125,7 +125,7 @@ export default function TodoList() {
     const onSetAlert = async () => {
         toast.dismiss()
         toast.loading("Loading...")
-        const response = await axios.post("api/todos/todoAlert", {task: tasks[alert]["task"], date: date, time: time})
+        const response = await axios.post("api/todos/todoAlert", {email: user, task: tasks[alert]["task"], date: date, time: time})
         toast.dismiss()
         toast.success(response.data.message)
         onAlertCancel()
