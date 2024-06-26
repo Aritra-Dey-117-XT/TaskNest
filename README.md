@@ -4,9 +4,9 @@ TaskNest is a To-Do List and productivity application built on [Secura_Auth](htt
 
 ## Visit My TaskNest Website
 
-You are warmly invited to try out my [TaskNest](https://tasknest.vercel.app) yourself.  
+You are warmly invited to try out my [TaskNest](https://yours-tasknest.vercel.app/) yourself.  
 Feel absolutely free to give any feedback.  
-Visit at: https://tasknest.vercel.app.
+Visit at: https://yours-tasknest.vercel.app/.
 
 ## Features
 
