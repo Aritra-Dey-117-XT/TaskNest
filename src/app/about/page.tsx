@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import myPicture from '../../../public/me.jpg'; // Ensure you have this image in the public directory
+import myPicture from '../../../public/me.jpg';
 
 const AboutPage = () => {
   return (
@@ -15,7 +15,7 @@ const AboutPage = () => {
       <section className="mb-12">
         <h1 className="text-4xl font-bold text-center mb-6 animate-fade-in">About TaskNext</h1>
         <p className="text-lg text-gray-700 leading-relaxed">
-        TaskNest is a To-Do List and productivity application built on <a className="font-bold text-blue-600 hover:text-blue-800" href="https://secura-auth.vercel.app">Secura_Auth</a>, leveraging Next.js 14 and MongoDB for robust task management and collaboration. TaskNest ensures secure task organization with advanced data encryption techniques and non-alien authentication methods, ensuring independence from third-party strategies like Google or GitHub. It features alert email notifications for tasks, enhancing productivity and timely task management. With TaskNest, prioritize efficiency and security in managing your daily tasks and projects.
+        TaskNest is a To-Do List and productivity application built on <a className="font-bold text-blue-600 hover:text-blue-800" href="https://secura-auth.vercel.app" target='_blank'>Secura_Auth</a>, leveraging Next.js 14 and MongoDB for robust task management and collaboration. TaskNest ensures secure task organization with advanced data encryption techniques and non-alien authentication methods, ensuring independence from third-party strategies like Google or GitHub. It features alert email notifications for tasks, enhancing productivity and timely task management. With TaskNest, prioritize efficiency and security in managing your daily tasks and projects.
         </p>
       </section>
 
@@ -28,7 +28,7 @@ const AboutPage = () => {
             className="rounded-full w-48 h-48 mb-6 shadow-lg"
           />
           <p className="text-lg text-gray-400 leading-relaxed text-center">
-          I am Aritra Dey, a dedicated web development enthusiast currently studying at IIIT Kalyani, an INI in West Bengal, India. My passion lies in creating robust and secure web applications that enhance user experience and efficiency. TaskNest, built on the secure foundation of <a className="font-bold text-blue-600 hover:text-blue-800" href="https://secura-auth.vercel.app">Secura_Auth</a> and utilizing Next.js 14 and MongoDB, represents my commitment to developing innovative solutions.
+          I am Aritra Dey, a dedicated web development enthusiast currently studying at IIIT Kalyani, an INI in West Bengal, India. My passion lies in creating robust and secure web applications that enhance user experience and efficiency. TaskNest, built on the secure foundation of <a className="font-bold text-blue-600 hover:text-blue-800" href="https://secura-auth.vercel.app" target='_blank'>Secura_Auth</a> and utilizing Next.js 14 and MongoDB, represents my commitment to developing innovative solutions.
           </p>
           <div className="flex justify-center mt-6 space-x-4">
             <Link href="https://linkedin.com/in/aritra-dey-14369b270" target="_blank" rel="noopener noreferrer">
