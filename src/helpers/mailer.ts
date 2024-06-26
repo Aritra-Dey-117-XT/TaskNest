@@ -38,7 +38,7 @@ export const sendEmail = async({email, emailType, userID}: any) => {
             port: 587,
             secure: false,
             auth: {
-                user: process.env.TASKNEST_EMAIl,
+                user: process.env.TASKNEST_EMAIL,
                 pass: process.env.TASKNEST_APP_PASSWORD
             }
         });
