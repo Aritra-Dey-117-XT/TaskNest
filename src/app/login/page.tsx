@@ -18,12 +18,12 @@ export default function LoginPage() {
     const [isButtonDisabled, setButtonDisabled] = useState(true)
 
     useEffect(() => {
-        if(user.email && user.password) {
+        if(Boolean(user.email.trim()) && user.password) {
             setButtonDisabled(false)
         } else {
             setButtonDisabled(true)
         }
-    }, [])
+    }, [user])
 
     const onLogin = async () => {
         try {
