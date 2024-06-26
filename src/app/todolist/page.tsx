@@ -80,6 +80,8 @@ export default function TodoList() {
     }
 
     const handleCheck = async (id: any, index: any, check: boolean) => {
+        toast.dismiss()
+        toast.loading("Loading", {duration: 1500})
         await axios.post("api/todos/setChecked", {id: id})
         getTasks()
     }
